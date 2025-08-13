@@ -5,3 +5,10 @@ summary: Empty sandbox environment
 description: Deploys an empty sandbox environment
 runner: ARM
 templatePath: azuredeploy.json
+parameters:
+- id: "location"
+  name: "location"
+  description: "Location to deploy the environment resources"
+  default: "[resourceGroup().location]"
+  type: "string"
+  required: false
