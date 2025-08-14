@@ -5,3 +5,21 @@ summary: Empty sandbox environment
 description: Deploys an empty sandbox environment
 runner: ARM
 templatePath: azuredeploy.json
+- id: "vnetAddressPrefix"
+  name: "vnetAddressPrefix"
+  description: "Address prefix"
+  default: "10.0.0.0/16"
+  type: "string"
+  required: false
+- id: "subnet1Prefix"
+  name: "subnet1Prefix"
+  description: "subnet 1 Prefix"
+  default: "10.0.0.0/24"
+  type: "string"
+  required: false
+- id: "subnet2Prefix"
+  name: "subnet2Prefix"
+  description: "subnet 2 Prefix"
+  default: "10.0.1.0/24"
+  type: "string"
+  required: false
